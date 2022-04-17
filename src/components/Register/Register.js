@@ -1,12 +1,17 @@
 import React from "react";
-import useFirebase from "../../hooks/useFirebase";
+import "./Register.css";
 
-const Login = () => {
-  const { signInWithGoogle } = useFirebase();
+const Register = () => {
   return (
     <div>
-      <h3 className="text-3xl font-bold mt-20 mb-5">Please Login</h3>
+      <h3 className="text-3xl font-bold mt-20 mb-5">Please Register</h3>
       <form>
+        <input
+          className="border my-2 px-3 py-2 w-96"
+          type="text"
+          placeholder="Full Name"
+        />{" "}
+        <br />
         <input
           className="border my-2 px-3 py-2 w-96"
           type="email"
@@ -22,18 +27,15 @@ const Login = () => {
         <input
           className="my-4 bg-indigo-600 text-white px-8 py-2 font-bold rounded cursor-pointer"
           type="submit"
-          value="Login"
-        />{" "}
+          value="Register"
+        />
         <br />
-        <button
-          onClick={signInWithGoogle}
-          className="bg-black text-white px-8 py-2 font-bold rounded cursor-pointer"
-        >
-          Sign In with Google
+        <button className="bg-black text-white px-8 py-2 font-bold rounded cursor-pointer">
+          Sign up with Google
         </button>
       </form>
     </div>
   );
 };
 
-export default Login;
+export default Register;

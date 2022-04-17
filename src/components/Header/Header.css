@@ -1,5 +1,6 @@
 .header {
   padding: 20px 20px;
+  background-color: mediumslateblue;
 }
 
 .header nav a {
@@ -8,9 +9,9 @@
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: black;
+  color: #fff;
 }
 
 .header nav a:hover {
-  color: blue;
+  color: orange;
 }
